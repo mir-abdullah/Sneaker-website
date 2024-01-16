@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SneakSpeaks</title>
+</head>
+<body>
+    <h1 class="pHeading">SneakSpeaks</h1>
+    <div class="sneek">
+        
+        <div class="tasveer">
+            <img src="icon1.jpeg" alt="sneeker image">
+        </div>
+        <div class="login">
+            <h2>Login</h2>
+            <input type="email" name="email" id="email1" placeholder=" Enter Your Email">
+            <input type="password" name="password" id="password2" placeholder="Enter your Password" minlength="2" maxlength="16">
+            <button title="submit">login</button>
+            <label for="create account"><a href="login.html"><u>Create your Account</u></a></label>
+                        
+        </div>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'write email *tag': function(variable) {
+      let email =document.getElementById("email1");
+      email.value=variable.split.join("");
+    },
+    'write password *tag': function(variable) {
+      let pw =document.getElementById("password2");
+      pw.value=variable;
+  }
+}
+  ;
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>
+    
+</body>
+</html>

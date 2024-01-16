@@ -1,0 +1,73 @@
+body{
+    background-color: blueviolet;
+}
+
+.pHeading{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.sneek{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    height: 30rem; 
+    display: flex; 
+    align-items: center; 
+}
+
+.tasveer {
+    flex: 1;
+}
+
+.tasveer img {
+    margin-left: 20%;
+    margin-right: 1 rem;
+    max-width: 100%;
+    height: auto; 
+
+}
+
+.login {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    height: 15rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    
+}
+
+h2 {
+    text-align: center; 
+}
+input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-top: 1rem;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    margin-left: 22%;
+
+}
+a {
+    text-decoration: none;
+    width: 50%;
+    
+}
+
+label{
+    align-items:center;
+    padding-top: 5%;
+    width: 50%;
+    margin-left: 35%;
+
+}
